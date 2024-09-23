@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">Prova P1</string>
     <string name="montante_final">Montante final?</string>
-    <string name="qual_a_taxa_de_juros">Qual é a taxa de juros?</string>
+    <string name="qual_a_taxa_de_juros">Qual é a taxa de juros? (a.a)</string>
     <string name="quantos_anos_at_a_sua_aposentadoria">Quantos anos até a sua aposentadoria?</string>
     <string name="calculate">Calcular Contribuição Mensal</string>
     <string name="reais">R$</string>
     <string name="hintRatePercentage">10%</string>
     <string name="_40">40</string>
     <string name="loading">Calculando...</string>
-    <string name="result">Para se chegar ao montante de R$%.2f, você deve investir RS%.2f por mês.</string>
+    <string name="result">Para se chegar ao montante de R$%.2f, você deve investir R$%.2f por mês.</string>
     <string name="o_campo_montante_final_obrigat_rio">O campo \'Montante final\' é obrigatório.</string>
     <string name="o_campo_qual_a_taxa_de_juros_obrigat_rio">O campo \'Qual é a taxa de juros\' é obrigatório.</string>
     <string name="o_campo_quantos_anos_at_a_sua_aposentadoria_obrigat_rio">O campo \'Quantos anos até a sua aposentadoria\' é obrigatório.</string>

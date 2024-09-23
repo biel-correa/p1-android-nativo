@@ -41,7 +41,7 @@ public class ResultActivity extends AppCompatActivity {
         final double ratePerMonth = ratePerYear / 12;
         final double numberOfMonths = numberOfYears * 12;
 
-        final double result = (finalAmount * ratePerMonth) / (Math.pow(1 + ratePerMonth, numberOfMonths) - 1);
+        final double result = finalAmount / numberOfMonths + (finalAmount * ratePerMonth / 100);
 
         final TextView resultText = findViewById(R.id.resultText);
         final String resultString = getResources().getString(R.string.result);
