@@ -1,6 +1,7 @@
 package com.example.provap1;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,5 +25,18 @@ public class ResultActivity extends AppCompatActivity {
             v.setPadding(horizontalPadding, systemBars.top, horizontalPadding, systemBars.bottom);
             return insets;
         });
+
+        final double finalAmount = getIntent().getDoubleExtra("finalAmount", 0);
+        final double ratePerYear = getIntent().getDoubleExtra("ratePerYear", 0);
+        final double numberOfYears = getIntent().getDoubleExtra("numberOfYears", 0);
+
+        final double ratePerMonth = ratePerYear / 12;
+        final double numberOfMonths = numberOfYears * 12;
+
+        final double result = (finalAmount * ratePerMonth) / (Math.pow(1 + ratePerMonth, numberOfMonths) - 1);
+
+        final TextView resultText = findViewById(R.id.resultText);
+        final String resultString = getResources().getString(R.string.result);
+        resultText.setText(String.format(resultString, finalAmount, result));
     }
 }

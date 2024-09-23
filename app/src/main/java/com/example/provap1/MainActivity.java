@@ -46,21 +46,21 @@ public class MainActivity extends AppCompatActivity {
 
             EditText finalAmountInput = findViewById(R.id.finalAmountInput);
             if (finalAmountInput.getText().toString().isEmpty()) {
-                errorText.setText("O campo 'Montante final' é obrigatório.");
+                errorText.setText(R.string.o_campo_montante_final_obrigat_rio);
                 errorText.setVisibility(TextView.VISIBLE);
                 return;
             }
 
             EditText ratePerYearInput = findViewById(R.id.ratePerYearInput);
             if (ratePerYearInput.getText().toString().isEmpty()) {
-                errorText.setText("O campo 'Qual é a taxa de juros' é obrigatório.");
+                errorText.setText(R.string.o_campo_qual_a_taxa_de_juros_obrigat_rio);
                 errorText.setVisibility(TextView.VISIBLE);
                 return;
             }
 
             EditText numberOfYearsInput = findViewById(R.id.numberOfYearsInput);
             if (numberOfYearsInput.getText().toString().isEmpty()) {
-                errorText.setText("O campo 'Quantos anos até a sua aposentadoria' é obrigatório.");
+                errorText.setText(R.string.o_campo_quantos_anos_at_a_sua_aposentadoria_obrigat_rio);
                 errorText.setVisibility(TextView.VISIBLE);
                 return;
             }

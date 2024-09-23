@@ -8,5 +8,8 @@
     <string name="hintRatePercentage">10%</string>
     <string name="_40">40</string>
     <string name="loading">Calculando...</string>
-    <string name="result">Para se chegar ao montante de R${0}, você deve investir RS{1} por mês.</string>
+    <string name="result">Para se chegar ao montante de R$%.2f, você deve investir RS%.2f por mês.</string>
+    <string name="o_campo_montante_final_obrigat_rio">O campo \'Montante final\' é obrigatório.</string>
+    <string name="o_campo_qual_a_taxa_de_juros_obrigat_rio">O campo \'Qual é a taxa de juros\' é obrigatório.</string>
+    <string name="o_campo_quantos_anos_at_a_sua_aposentadoria_obrigat_rio">O campo \'Quantos anos até a sua aposentadoria\' é obrigatório.</string>
 </resources>
