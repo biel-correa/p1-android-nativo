@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">ProvaP1</string>
+    <string name="app_name">Prova P1</string>
+    <string name="montante_final">Montante final?</string>
+    <string name="qual_a_taxa_de_juros">Qual é a taxa de juros?</string>
+    <string name="quantos_anos_at_a_sua_aposentadoria">Quantos anos até a sua aposentadoria?</string>
+    <string name="calculate">Calcular Contribuição Mensal</string>
+    <string name="reais">R$</string>
+    <string name="hintRatePercentage">10%</string>
+    <string name="_40">40</string>
 </resources>
