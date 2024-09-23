@@ -12,4 +12,5 @@
     <string name="o_campo_montante_final_obrigat_rio">O campo \'Montante final\' é obrigatório.</string>
     <string name="o_campo_qual_a_taxa_de_juros_obrigat_rio">O campo \'Qual é a taxa de juros\' é obrigatório.</string>
     <string name="o_campo_quantos_anos_at_a_sua_aposentadoria_obrigat_rio">O campo \'Quantos anos até a sua aposentadoria\' é obrigatório.</string>
+    <string name="back">Voltar</string>
 </resources>

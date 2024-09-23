@@ -1,6 +1,7 @@
 package com.example.provap1;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -15,6 +16,11 @@ public class ResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+
+        try {
+            getSupportActionBar().hide();
+        } catch (NullPointerException ignored) {}
+
         setContentView(R.layout.activity_result);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -25,6 +31,8 @@ public class ResultActivity extends AppCompatActivity {
             v.setPadding(horizontalPadding, systemBars.top, horizontalPadding, systemBars.bottom);
             return insets;
         });
+
+        this.listenToBackButton();
 
         final double finalAmount = getIntent().getDoubleExtra("finalAmount", 0);
         final double ratePerYear = getIntent().getDoubleExtra("ratePerYear", 0);
@@ -38,5 +46,12 @@ public class ResultActivity extends AppCompatActivity {
         final TextView resultText = findViewById(R.id.resultText);
         final String resultString = getResources().getString(R.string.result);
         resultText.setText(String.format(resultString, finalAmount, result));
+    }
+
+    private void listenToBackButton() {
+        final Button backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(v -> {
+            finish();
+        });
     }
 }
