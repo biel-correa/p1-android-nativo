@@ -7,4 +7,6 @@
     <string name="reais">R$</string>
     <string name="hintRatePercentage">10%</string>
     <string name="_40">40</string>
+    <string name="loading">Calculando...</string>
+    <string name="result">Para se chegar ao montante de R${0}, você deve investir RS{1} por mês.</string>
 </resources>

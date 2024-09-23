@@ -1,5 +1,6 @@
 package com.example.provap1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -63,6 +64,17 @@ public class MainActivity extends AppCompatActivity {
                 errorText.setVisibility(TextView.VISIBLE);
                 return;
             }
+
+            double finalAmount = Double.parseDouble(finalAmountInput.getText().toString());
+            double ratePerYear = Double.parseDouble(ratePerYearInput.getText().toString());
+            double numberOfYears = Double.parseDouble(numberOfYearsInput.getText().toString());
+
+            Intent intent = new Intent(this, ResultActivity.class);
+            intent.putExtra("finalAmount", finalAmount);
+            intent.putExtra("ratePerYear", ratePerYear);
+            intent.putExtra("numberOfYears", numberOfYears);
+
+            startActivity(intent);
         });
     }
 }
